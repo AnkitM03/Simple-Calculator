@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <!--<link rel='stylesheet' type="text/css" href="style.css">-->
+        <style>
+            input{
+                 width: 150px;
+                height: 100px;
+                font-size: 75px;
+                background-color: black;
+                border-radius: 10px;
+                margin: 10px;
+                color: #ffffff;
+                border-style: none;
+            }
+            
+
+            #calci{
+                margin-left: 275px;
+                margin-top: 20px;
+            }
+
+            h1{
+                font-size: 80px;
+                margin-right: 150px;
+                margin-top: 20px;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+
+        
+        <h1 style="text-align: center; color:chocolate;"> SIMPLE CALCULATOR</h1>
+        
+
+
+        <form id="calci" name="cal">
+
+
+            <input name="display" style="width:675px ; height:100px ;background-color: seagreen;text-align: center; color: black;"><br>
+            <input type="button" value="0" onclick="cal.display.value+='0'"> 
+            <input type="button" value="1" onclick="cal.display.value+='1'">
+            <input type="button" value="2" onclick="cal.display.value+='2'">
+            <input type="button" value="+" onclick="cal.display.value+='+'" style="background-color: mediumpurple;"><br>
+            <input type="button" value="3" onclick="cal.display.value+='3'">
+            <input type="button" value="4" onclick="cal.display.value+='4'">
+            <input type="button" value="5" onclick="cal.display.value+='5'">
+            <input type="button" value="-" onclick="cal.display.value+='-'" style="background-color: mediumvioletred;"><br>
+            <input type="button" value="6" onclick="cal.display.value+='6'">
+            <input type="button" value="7" onclick="cal.display.value+='7'">
+            <input type="button" value="8" onclick="cal.display.value+='8'">
+            <input type="button" value="x" onclick="cal.display.value+='*'" style="background-color: sandybrown;"><br>
+            <input type="button" value="9" onclick="cal.display.value+='9'">
+            <input type="button" value="C" onclick="cal.display.value=''" style="background-color: red;">
+            <input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)" style="background-color: rgb(red, green, blue);">
+            <input type="button" value="&#247;" onclick="cal.display.value+='/'" style="background-color: yellow;">
+        </form>
+
+    </body>
+</html>
